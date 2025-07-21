@@ -1,0 +1,16 @@
+[project]
+name = "mcp-saudacao"
+version = "0.2.0"
+description = "Servidor MCP simples com funcionalidade de saudação"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.10.5",
+]
+
+[project.scripts]
+mcp-saudacao = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
+packages = ["mcp_tools"]
